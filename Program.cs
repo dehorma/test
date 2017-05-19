@@ -19,7 +19,7 @@ namespace MeowWorld
             .UseKestrel()
             .UseContentRoot(Directory.GetCurrentDirectory())
             .UseIISIntegration()
-            .UseStartup()
+            .UseStartup<Startup>()
             .UseUrls(url) // 4th line added
             .Build();
 
